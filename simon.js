@@ -38,7 +38,7 @@ var timer = setTimeout(function(){
     }
 
     for(l=0; l< inputs.length; l++){
-        if(inputs[l] === numbers[l]){
+        if(numbers.includes(inputs[l])){
             guessed.push(inputs[l]);
         }
     }
