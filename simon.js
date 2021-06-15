@@ -4,13 +4,13 @@ var numbers= [];
 
 for(i=1; i<=5; i++){
     var temporaryNum = getRandomNumber(1,50);
-    if(numbers.includes(temporaryNum)){
+    while(numbers.includes(temporaryNum)){
         console.log("Rerolling...")
-        i--;
-    }   else{
+        temporaryNum = getRandomNumber(1,50);
+    }
         console.log(i + " : "+ temporaryNum);
         numbers.push(temporaryNum);
-    }
+    
 }
 
 alert(numbers);
